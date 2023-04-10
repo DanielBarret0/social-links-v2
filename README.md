@@ -15,7 +15,7 @@
 
 # 🖼️ Banner do VitrineDev
 <div align="center">
-<img src="#vitrinedev">
+<img src="https://github.com/DanielBarret0/social-links-v2/blob/main/assets/img/gif-desktop.gif#vitrinedev">
 </div>
 
 # Sobre o projeto
@@ -68,13 +68,13 @@ transition: 500ms all;
 
 
 ## Layout mobile 
-![Mobile 1]()
+![Mobile 1](https://github.com/DanielBarret0/social-links-v2/blob/main/assets/img/gif-mobile.gif)
 
 ## Layout Tablet
-![tablet 1]()
+![tablet 1](https://github.com/DanielBarret0/social-links-v2/blob/main/assets/img/gif-tablet.gif)
 
 ## Layout Desktop
-![desktop 1]()
+![desktop 1](https://github.com/DanielBarret0/social-links-v2/blob/main/assets/img/gif-desktop.gif)
 
 # Autor
 
