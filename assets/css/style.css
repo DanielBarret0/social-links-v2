@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+:root {
+    --preto: #03061b;
+    --azul: #1858b3;
+    --verde: #03C988;
+    --branco: #FFFFFF;
+
+    --fonte: 'Inter', sans-serif;
+
+    --animacao-1: fadeIn 2s;
+    --animacao-2: fadeIn 3s;
+    --animacao-3: fadeIn 4s;
+    --animacao-4: fadeIn 5s;
+    --animacao-5: fadeIn 6s;
+    --animacao-6: fadeIn 7s;
+}
+
+
+body {
+    background: var(--preto);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    font-family: var(--fonte);
+}
+
+.titulo__imagem {
+    border-radius: 60px;
+    width: 150px;
+    box-shadow: 10px 8px 0px -5px var(--azul);
+    animation: var(--animacao-1);
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    animation: var(--animacao-1);
+}
+
+
+.titulo__paragrafo {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    animation: var(--animacao-1);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.9375rem;
+    padding-top: 1.5rem;
+}
+
+.container__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    width: 80%;
+    transition: 500ms all;
+}
+
+
+.titulo {
+    font-size: 3rem;
+}
+
+.links {
+    animation: bounceIn 1s cubic-bezier(.2, .63, .8, .43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    color: white;
+    background: var(--fundo-card);
+    width: 70%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: solid 2px var(--azul);
+    border-radius: 15px;
+    transition: 500ms all;
+}
+
+/* ==================== Efeito Fade In em cada link =================== */
+
+.fade-1 {
+    animation: var(--animacao-2);
+}
+
+.fade-2 {
+    animation: var(--animacao-3);
+}
+
+.fade-3 {
+    animation: var(--animacao-4);
+}
+
+.fade-4 {
+    animation: var(--animacao-5);
+}
+
+/* ==================== Efeito Fade In em cada link =================== */
+
+
+.icones {
+    transition: 500ms all;
+}
+
+.links:hover>.icones {
+    color: var(--azul);
+    font-size: 1.3rem;
+}
+
+.links:hover {
+    transform: scale(1.1);
+    font-size: 1.3rem;
+    background-color: #5c5c5c6a;
+}
+
+.imagem-link {
+    width: 50px;
+    height: 50px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 2em;
+    padding-bottom: 4em;
+    animation: var(--animacao-6);
+}
+
+.rodape__texto {
+    font-size: 1.2rem;
+}
+
+.rodape__link {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.rodape__link:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (min-width: 1024px) {
+    .container__links {
+        width: 40vw;
+    }
+
+    .titulo__imagem {
+        border-radius: 100px;
+        width: 150px;
+        margin-top: 2em;
+    }
+
+}
+
+@media (min-width: 2000px) {
+    .links {
+        width: 21.875rem;
+    }
+}
+
+
+/* Animacao Fade-in  */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animacao Fade-in  */
+
+/* ======================== Gradiente animado  ========================== */
+
+.gradiente {
+    background: linear-gradient(313deg, #000000, #343434);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 10%
+    }
+
+    50% {
+        background-position: 100% 91%
+    }
+
+    100% {
+        background-position: 0% 10%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 10%
+    }
+
+    50% {
+        background-position: 100% 91%
+    }
+
+    100% {
+        background-position: 0% 10%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 10%
+    }
+
+    50% {
+        background-position: 100% 91%
+    }
+
+    100% {
+        background-position: 0% 10%
+    }
+}
+
+/* ======================== Gradiente animado  ========================== */
